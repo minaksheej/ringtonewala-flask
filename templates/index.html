@@ -1,0 +1,3128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <title>RingtoneWala - YouTube to MP3 & Free Ringtone Maker in Hindi</title>
+    <meta
+      name="description"
+      content="Download YouTube audio and make free ringtones in Hindi & English. Fast, simple, and 100% free ringtone creator for India."
+    />
+    <meta
+      name="keywords"
+      content="YouTube to MP3, ringtone maker, free ringtone download, गाना से रिंगटोन, hindi ringtone, ringtonewala, bollywood ringtone, punjabi ringtone, whatsapp status audio, free ringtone maker india"
+    />
+    <meta name="author" content="RingtoneWala.com" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="RingtoneWala - Free Ringtone Maker from YouTube Songs"
+    />
+    <meta
+      property="og:description"
+      content="Convert YouTube audio into ringtones in Hindi or English. Fast, free, no signup!"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ringtonewala.com" />
+    <meta
+      property="og:image"
+      content="https://ringtonewala.com/static/preview.png"
+    />
+    <meta property="og:site_name" content="RingtoneWala.com" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="RingtoneWala - Free Ringtone Maker from YouTube Songs"
+    />
+    <meta
+      name="twitter:description"
+      content="Convert YouTube audio into ringtones in Hindi or English. Fast, free, no signup!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://audioconverter-pro.railway.app/static/og-image.jpg"
+    />
+
+    <!-- Additional SEO -->
+    <link rel="canonical" href="https://audioconverter-pro.railway.app" />
+    <meta name="theme-color" content="#667eea" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="RingtoneWala.com" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "RingtoneWala - Free Ringtone Maker",
+        "description": "Download YouTube audio and make free ringtones in Hindi & English. Fast, simple, and 100% free ringtone creator for India.",
+        "url": "https://ringtonewala.com",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Any",
+        "inLanguage": ["en", "hi"],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR"
+        },
+        "featureList": [
+          "YouTube to MP3 conversion",
+          "Custom ringtone creation",
+          "Hindi and English support",
+          "High-quality audio output",
+          "Mobile-friendly interface",
+          "No registration required"
+        ],
+        "keywords": "YouTube to MP3, ringtone maker, free ringtone download, गाना से रिंगटोन, hindi ringtone, bollywood ringtone"
+      }
+    </script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        padding-top: 50px;
+      }
+
+      .card {
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 15px 35px rgba(255, 107, 107, 0.15);
+        backdrop-filter: blur(10px);
+        background: linear-gradient(135deg, rgba(255, 107, 107, 0.05) 0%, rgba(78, 205, 196, 0.05) 25%, rgba(69, 183, 209, 0.05) 50%, rgba(150, 206, 180, 0.05) 75%, rgba(254, 202, 87, 0.05) 100%);
+        border: 2px solid rgba(255, 107, 107, 0.1);
+        transition: all 0.3s ease;
+      }
+      
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 25px 50px rgba(255, 107, 107, 0.25);
+        border-color: rgba(255, 107, 107, 0.3);
+      }
+
+      .card-header {
+        background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 25%, #45b7d1 50%, #96ceb4 75%, #feca57 100%);
+        color: white;
+        border-radius: 20px 20px 0 0 !important;
+        padding: 30px;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      }
+
+      .card-body {
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 0 0 20px 20px;
+      }
+
+      .form-control {
+        border-radius: 15px;
+        border: 2px solid rgba(255, 107, 107, 0.2);
+        padding: 15px 20px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        background: rgba(255, 255, 255, 0.9);
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      .form-control:focus {
+        border-color: #ff6b6b;
+        box-shadow: 0 0 0 0.2rem rgba(255, 107, 107, 0.25);
+        background: rgba(255, 255, 255, 1);
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 25%, #45b7d1 50%, #96ceb4 75%, #feca57 100%);
+        border: none;
+        border-radius: 15px;
+        padding: 15px 30px;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(255, 107, 107, 0.4);
+        background: linear-gradient(135deg, #ff5252 0%, #26a69a 25%, #2196f3 50%, #66bb6a 75%, #ffa726 100%);
+      }
+
+      .btn-success {
+        background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        border: none;
+        border-radius: 15px;
+        padding: 15px 30px;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .btn-success:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(17, 153, 142, 0.3);
+      }
+
+      .alert {
+        border-radius: 15px;
+        border: 2px solid rgba(255, 107, 107, 0.2);
+        padding: 15px 20px;
+        margin-bottom: 20px;
+        background: rgba(255, 255, 255, 0.9);
+        font-family: 'Poppins', sans-serif;
+        box-shadow: 0 4px 15px rgba(255, 107, 107, 0.1);
+      }
+      
+      .alert-success {
+        background: linear-gradient(135deg, rgba(76, 175, 80, 0.1) 0%, rgba(150, 206, 180, 0.1) 100%);
+        border-color: rgba(76, 175, 80, 0.3);
+        color: #2e7d32;
+      }
+      
+      .alert-danger {
+        background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(255, 87, 34, 0.1) 100%);
+        border-color: rgba(255, 107, 107, 0.3);
+        color: #c62828;
+      }
+      
+      /* Preview Button Styling */
+      .btn-outline-secondary {
+        background: linear-gradient(135deg, rgba(78, 205, 196, 0.1) 0%, rgba(69, 183, 209, 0.1) 100%);
+        border: 2px solid #4ecdc4;
+        color: #4ecdc4;
+        border-radius: 15px;
+        padding: 12px 25px;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(78, 205, 196, 0.2);
+      }
+      
+      .btn-outline-secondary:hover {
+        background: linear-gradient(135deg, #4ecdc4 0%, #45b7d1 100%);
+        border-color: #4ecdc4;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(78, 205, 196, 0.4);
+      }
+      
+      .btn-outline-secondary:focus {
+        background: linear-gradient(135deg, #4ecdc4 0%, #45b7d1 100%);
+        border-color: #4ecdc4;
+        color: white;
+        box-shadow: 0 0 0 0.2rem rgba(78, 205, 196, 0.25);
+      }
+      
+      .btn-outline-secondary:active {
+        background: linear-gradient(135deg, #26a69a 0%, #2196f3 100%);
+        border-color: #26a69a;
+        color: white;
+        transform: translateY(0);
+      }
+      
+      /* Play/Pause Button Styling */
+      .btn-outline-primary {
+        background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(254, 202, 87, 0.1) 100%);
+        border: 2px solid #ff6b6b;
+        color: #ff6b6b;
+        border-radius: 15px;
+        padding: 8px 16px;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(255, 107, 107, 0.2);
+      }
+      
+      .btn-outline-primary:hover {
+        background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+        border-color: #ff6b6b;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+      }
+      
+      .btn-outline-primary:focus {
+        background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+        border-color: #ff6b6b;
+        color: white;
+        box-shadow: 0 0 0 0.2rem rgba(255, 107, 107, 0.25);
+      }
+      
+      .btn-outline-primary:active {
+        background: linear-gradient(135deg, #ff5252 0%, #ffa726 100%);
+        border-color: #ff5252;
+        color: white;
+        transform: translateY(0);
+      }
+
+      .loading {
+        display: none;
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .spinner-border {
+        color: #667eea;
+      }
+
+      .icon {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .nav-tabs .nav-link {
+        border: none;
+        border-radius: 15px 15px 0 0;
+        margin-right: 5px;
+        background: rgba(255, 255, 255, 0.1);
+        color: #667eea;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .nav-tabs .nav-link:hover {
+        background: rgba(255, 255, 255, 0.2);
+        color: #764ba2;
+      }
+
+      .nav-tabs .nav-link.active {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+      }
+
+      .tab-content {
+        padding-top: 20px;
+      }
+
+      /* Waveform Visualizer Styles */
+      .waveform-container {
+        background: #f8f9fa;
+        border-radius: 15px;
+        padding: 20px;
+        border: 1px solid #e9ecef;
+      }
+
+      .waveform-visualizer {
+        background: white;
+        border-radius: 10px;
+        padding: 15px;
+        border: 1px solid #dee2e6;
+        overflow-x: auto;
+      }
+
+      #waveformCanvas, #fileWaveformCanvas {
+        width: 100%;
+        height: 100px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .time-slider-container {
+        margin-top: 10px;
+      }
+
+      .time-display {
+        margin-top: 10px;
+        font-weight: 500;
+        color: #495057;
+      }
+
+      .form-range {
+        background: linear-gradient(to right, #667eea 0%, #764ba2 100%);
+        height: 8px;
+        border-radius: 5px;
+      }
+
+      .form-range::-webkit-slider-thumb {
+        background: #667eea;
+        border: 2px solid white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .form-range::-moz-range-thumb {
+        background: #667eea;
+        border: 2px solid white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .waveform-controls .btn {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .duration-info {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+      }
+
+      .duration-info .fas {
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+       .gap-3 {
+         gap: 1rem !important;
+       }
+
+       /* Hero Section Styles */
+       .hero-section {
+         background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 25%, #45b7d1 50%, #96ceb4 75%, #feca57 100%);
+         background-size: 400% 400%;
+         animation: gradientShift 8s ease infinite;
+         color: white;
+         padding-top: 80px;
+         position: relative;
+         overflow: hidden;
+         min-height: 60vh;
+         text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+       }
+
+       @keyframes gradientShift {
+         0% { background-position: 0% 50%; }
+         50% { background-position: 100% 50%; }
+         100% { background-position: 0% 50%; }
+       }
+
+       .hero-section::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23ffffff" stop-opacity="0.1"/><stop offset="100%" stop-color="%23ffffff" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="300" fill="url(%23a)"/><circle cx="800" cy="800" r="400" fill="url(%23a)"/></svg>');
+         opacity: 0.3;
+       }
+
+       .hero-title {
+         font-size: 3.5rem;
+         font-weight: 800;
+         line-height: 1.2;
+         margin-bottom: 1.5rem;
+         position: relative;
+         z-index: 2;
+         text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+       }
+
+       .hero-subtitle {
+         font-size: 1.4rem;
+         line-height: 1.6;
+         margin-bottom: 2rem;
+         opacity: 0.95;
+         position: relative;
+         z-index: 2;
+         text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+       }
+
+       .hero-buttons {
+         position: relative;
+         z-index: 2;
+       }
+
+       .hero-buttons .btn-primary {
+         background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+         border: none;
+         padding: 15px 30px;
+         font-size: 1.2rem;
+         font-weight: 600;
+         border-radius: 50px;
+         box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+         transition: all 0.3s ease;
+         text-shadow: none;
+       }
+
+       .hero-buttons .btn-primary:hover {
+         transform: translateY(-3px);
+         box-shadow: 0 12px 35px rgba(255, 107, 107, 0.6);
+         background: linear-gradient(45deg, #ff5252, #26a69a);
+       }
+
+       .hero-illustration {
+         position: relative;
+         z-index: 2;
+       }
+
+       .hero-icon {
+         font-size: 8rem;
+         opacity: 0.3;
+         color: white;
+       }
+
+       /* Section Styles */
+       .section-title {
+         font-size: 2.5rem;
+         font-weight: 700;
+         color: #333;
+         margin-bottom: 1rem;
+       }
+
+       .section-subtitle {
+         font-size: 1.1rem;
+         color: #666;
+         margin-bottom: 0;
+       }
+
+      /* Navigation Styles */
+      .navbar {
+        margin: 0;
+        padding: 0.5rem 0;
+      }
+      
+      .navbar-brand {
+        font-size: 1.5rem;
+      }
+
+       .navbar-nav .nav-link {
+         font-weight: 500;
+         color: #333 !important;
+         transition: color 0.3s ease;
+       }
+
+       .navbar-nav .nav-link:hover {
+         color: #667eea !important;
+       }
+
+       /* Form Styles */
+       .form-control {
+         border-radius: 10px;
+         border: 2px solid #e9ecef;
+         padding: 12px 16px;
+         font-size: 1rem;
+         transition: all 0.3s ease;
+       }
+
+       .form-control:focus {
+         border-color: #667eea;
+         box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+       }
+
+       .btn {
+         border-radius: 10px;
+         padding: 12px 24px;
+         font-weight: 600;
+         transition: all 0.3s ease;
+       }
+
+       .btn-primary {
+         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+         border: none;
+       }
+
+       .btn-primary:hover {
+         transform: translateY(-2px);
+         box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+       }
+
+       .btn-outline-light:hover {
+         transform: translateY(-2px);
+       }
+
+       /* Card Styles */
+       .card {
+         border-radius: 20px;
+         border: 2px solid rgba(255, 107, 107, 0.1);
+         box-shadow: 0 20px 40px rgba(255, 107, 107, 0.15);
+         background: linear-gradient(135deg, rgba(255, 107, 107, 0.05) 0%, rgba(78, 205, 196, 0.05) 25%, rgba(69, 183, 209, 0.05) 50%, rgba(150, 206, 180, 0.05) 75%, rgba(254, 202, 87, 0.05) 100%);
+         transition: all 0.3s ease;
+       }
+       
+       .card:hover {
+         transform: translateY(-5px);
+         box-shadow: 0 25px 50px rgba(255, 107, 107, 0.25);
+         border-color: rgba(255, 107, 107, 0.3);
+       }
+
+       /* Navigation Pills */
+       .nav-pills .nav-link {
+         border-radius: 5px;
+         color: #666;
+         font-weight: 500;
+         transition: all 0.3s ease;
+       }
+
+       .nav-pills .nav-link.active {
+         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+         border: none;
+       }
+
+       .nav-pills .nav-link:hover:not(.active) {
+         background-color: #f8f9fa;
+         color: #667eea;
+       }
+
+      /* Modern Menu Cards */
+      .menu-card {
+        background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(78, 205, 196, 0.1) 25%, rgba(69, 183, 209, 0.1) 50%, rgba(150, 206, 180, 0.1) 75%, rgba(254, 202, 87, 0.1) 100%);
+        border-radius: 20px;
+        padding: 30px 25px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border: 2px solid rgba(255, 107, 107, 0.2);
+        position: relative;
+        overflow: hidden;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 10px 30px rgba(255, 107, 107, 0.1);
+      }
+
+      .menu-card:hover {
+        transform: translateY(-10px);
+        border-color: #ff6b6b;
+        box-shadow: 0 20px 40px rgba(255, 107, 107, 0.3);
+        background: linear-gradient(135deg, rgba(255, 107, 107, 0.2) 0%, rgba(78, 205, 196, 0.2) 25%, rgba(69, 183, 209, 0.2) 50%, rgba(150, 206, 180, 0.2) 75%, rgba(254, 202, 87, 0.2) 100%);
+      }
+
+      .menu-card.active {
+        background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 25%, #45b7d1 50%, #96ceb4 75%, #feca57 100%);
+        color: white;
+        transform: translateY(-5px);
+        border-color: #ff6b6b;
+      }
+
+      .menu-icon {
+        font-size: 3rem;
+        color: #ff6b6b;
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+      }
+
+      .menu-card:hover .menu-icon {
+        transform: scale(1.1);
+        color: #4ecdc4;
+      }
+
+      .menu-card.active .menu-icon {
+        color: white;
+        transform: scale(1.1);
+      }
+
+      .menu-title {
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #333;
+        transition: color 0.3s ease;
+      }
+
+      .menu-card.active .menu-title {
+        color: white;
+      }
+
+      .menu-description {
+        font-size: 0.95rem;
+        color: #666;
+        margin-bottom: 20px;
+        line-height: 1.5;
+        transition: color 0.3s ease;
+      }
+
+      .menu-card.active .menu-description {
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .menu-arrow {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-size: 1.2rem;
+        color: #ff6b6b;
+        transition: all 0.3s ease;
+      }
+
+      .menu-card:hover .menu-arrow {
+        transform: translateX(5px);
+        color: #4ecdc4;
+      }
+
+      .menu-card.active .menu-arrow {
+        color: white;
+        transform: translateX(5px);
+      }
+
+      /* Section Visibility */
+      .tab-pane {
+        display: none;
+      }
+
+      .tab-pane.active {
+        display: block;
+        animation: fadeIn 0.5s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Back Button */
+      .back-to-menu {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        border-radius: 15px;
+        padding: 12px 25px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      .back-to-menu:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        color: white;
+      }
+
+      /* Smooth Scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+
+       /* Footer Styles */
+       footer {
+         margin-top: 50px;
+       }
+
+       footer h5 {
+         color: #667eea;
+       }
+
+       /* Responsive */
+       @media (max-width: 768px) {
+         .hero-section {
+           min-height: 50vh;
+           padding-top: 70px;
+         }
+
+         .hero-title {
+           font-size: 2.2rem;
+         }
+         
+         .hero-icon {
+           font-size: 5rem;
+         }
+         
+         .section-title {
+           font-size: 2rem;
+         }
+
+         .hero-buttons .btn {
+           display: block;
+           width: 100%;
+           margin-bottom: 10px;
+         }
+
+         .hero-buttons .btn:last-child {
+           margin-bottom: 0;
+         }
+       }
+      
+      /* Navigation Hover Effects */
+      .nav-link:hover {
+        color: #ff6b6b !important;
+        transform: translateY(-1px);
+      }
+      
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -5px;
+        left: 50%;
+        background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+      }
+      
+      .nav-link:hover::after {
+        width: 100%;
+      }
+      
+      /* CTA Button in Navbar */
+      .navbar-cta {
+        background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+        border: none;
+        border-radius: 25px;
+        padding: 8px 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+      }
+      
+      .navbar-cta:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+        color: white;
+        text-decoration: none;
+      }
+      
+      /* Ensure dropdown menu appears above everything */
+      .dropdown-menu {
+        z-index: 10000 !important;
+        position: absolute !important;
+      }
+      
+      .navbar {
+        z-index: 9999 !important;
+      }
+      
+      /* Floating Music Icons */
+      .floating-music-icons {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        pointer-events: none;
+        z-index: 0;
+      }
+      
+      .music-icon {
+        position: absolute;
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 0.1);
+        animation: float 6s ease-in-out infinite;
+      }
+      
+      .music-icon:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
+      .music-icon:nth-child(2) { top: 60%; left: 80%; animation-delay: 1s; }
+      .music-icon:nth-child(3) { top: 30%; left: 70%; animation-delay: 2s; }
+      .music-icon:nth-child(4) { top: 80%; left: 20%; animation-delay: 3s; }
+      .music-icon:nth-child(5) { top: 10%; left: 50%; animation-delay: 4s; }
+      .music-icon:nth-child(6) { top: 70%; left: 60%; animation-delay: 5s; }
+      
+      @keyframes float {
+        0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.1; }
+        50% { transform: translateY(-20px) rotate(180deg); opacity: 0.3; }
+      }
+      
+      /* Enhanced CTA Button */
+      .hero-cta-button {
+        background: linear-gradient(45deg, #FF5722, #4CAF50);
+        border: none;
+        border-radius: 50px;
+        padding: 18px 40px;
+        font-size: 1.3rem;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 8px 30px rgba(255, 87, 34, 0.4);
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .hero-cta-button:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 15px 40px rgba(255, 87, 34, 0.6);
+        color: white;
+        text-decoration: none;
+        animation: glow 2s ease-in-out infinite alternate;
+      }
+      
+      @keyframes glow {
+        from { box-shadow: 0 15px 40px rgba(255, 87, 34, 0.6); }
+        to { box-shadow: 0 15px 40px rgba(76, 175, 80, 0.6); }
+      }
+      
+      /* Hero Layout Improvements */
+      .hero-content {
+        position: relative;
+        z-index: 1;
+      }
+      
+      .hero-visual {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      /* Ensure hero section doesn't interfere with navigation */
+      .hero-section {
+        position: relative;
+        z-index: 1;
+      }
+      
+      .phone-mockup {
+        width: 200px;
+        height: 400px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 40px;
+        position: relative;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      .phone-screen {
+        width: 90%;
+        height: 85%;
+        background: #000;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .waveform-visual {
+        width: 100%;
+        height: 60px;
+        background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57);
+        border-radius: 30px;
+        position: relative;
+        animation: waveform 2s ease-in-out infinite;
+      }
+      
+      @keyframes waveform {
+        0%, 100% { transform: scaleY(1); }
+        50% { transform: scaleY(1.5); }
+      }
+      
+      .call-text {
+        margin-top: 20px;
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      
+      /* Hide phone mockup on mobile devices */
+      @media (max-width: 768px) {
+        .hero-visual {
+          display: none !important;
+        }
+        
+        .hero-content {
+          text-align: center;
+        }
+        
+        .hero-title {
+          font-size: 2.5rem !important;
+        }
+        
+        .hero-subtitle {
+          font-size: 1.2rem !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-light sticky top-0" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.2); z-index: 9999; position: relative;">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <i class="fas fa-music me-2" style="color: #ff6b6b;"></i>
+          <!-- RingtoneWala.com Brand -->
+          <span class="fw-bold" style="color: #333; font-family: 'Poppins', sans-serif;" data-translate="site_name">RingtoneWala.com</span>
+        </a>
+        <!-- Language Switcher -->
+        <div class="d-flex align-items-center me-3">
+          <div class="dropdown">
+            <button class="btn btn-outline-primary btn-sm dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="border-color: #ff6b6b; color: #ff6b6b; font-family: 'Poppins', sans-serif;">
+              <i class="fas fa-globe me-1"></i>
+              <span id="currentLanguage">English</span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+              <li><a class="dropdown-item" href="#" data-lang="en">
+                <i class="fas fa-flag-usa me-2"></i>English
+              </a></li>
+              <li><a class="dropdown-item" href="#" data-lang="hi">
+                <i class="fas fa-flag me-2"></i>हिन्दी
+              </a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home" data-translate="nav_home" style="color: #333; font-family: 'Poppins', sans-serif; font-weight: 500; position: relative; transition: all 0.3s ease;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#converter" data-translate="nav_youtube_mp3" style="color: #333; font-family: 'Poppins', sans-serif; font-weight: 500; position: relative; transition: all 0.3s ease;">YouTube to MP3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ringtone" data-translate="nav_ringtone_maker" style="color: #333; font-family: 'Poppins', sans-serif; font-weight: 500; position: relative; transition: all 0.3s ease;">Ringtone Maker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog" data-translate="nav_blog" style="color: #333; font-family: 'Poppins', sans-serif; font-weight: 500; position: relative; transition: all 0.3s ease;">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <!-- Floating Music Icons -->
+      <div class="floating-music-icons">
+        <div class="music-icon">🎵</div>
+        <div class="music-icon">🎶</div>
+        <div class="music-icon">🎼</div>
+        <div class="music-icon">🎤</div>
+        <div class="music-icon">🎧</div>
+        <div class="music-icon">📱</div>
+      </div>
+      
+      <div class="container">
+        <div class="row align-items-center py-5">
+          <!-- Left Side: Content -->
+          <div class="col-lg-6 hero-content">
+            <h1 class="hero-title" data-translate="hero_title" style="font-size: 3.5rem; font-weight: 800; margin-bottom: 1.5rem; text-shadow: 3px 3px 6px rgba(0,0,0,0.4); font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif;">अपना फेवरेट गाना चुनो, बनाओ अपनी रिंगटोन!</h1>
+            <p class="hero-subtitle" data-translate="hero_subtitle" style="font-size: 1.4rem; margin-bottom: 2rem; opacity: 0.95; text-shadow: 1px 1px 3px rgba(0,0,0,0.3); font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif;">YouTube से Audio डाउनलोड करो और सिर्फ एक क्लिक में ringtone बनाओ।</p>
+            <div class="hero-buttons">
+              <a href="#" class="hero-cta-button" data-translate="btn_start_converting" onclick="startMakingRingtone(event)">🎶 रिंगटोन बनाना शुरू करें</a>
+            </div>
+          </div>
+          
+          <!-- Right Side: Phone Mockup -->
+          <div class="col-lg-6 hero-visual">
+            <div class="phone-mockup">
+              <div class="phone-screen">
+                <div class="waveform-visual"></div>
+                <div class="call-text">
+                  <div style="font-size: 1.2rem; margin-bottom: 10px;">📞 Incoming Call</div>
+                  <div style="font-size: 0.8rem; opacity: 0.8;">Custom Ringtone Playing</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section id="converter" class="py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="text-center mb-5">
+              <p style="font-size:18px; line-height:1.8; color:#333; margin-bottom:20px;">
+               RingtoneWala.com आपके लिए एक फ्री ऑनलाइन टूल है जहाँ आप YouTube से गाना निकालकर 
+               रिंगटोन बना सकते हैं। चाहे आपको Bollywood ringtones, Punjabi songs, या Trending WhatsApp 
+               status audio चाहिए – सबकुछ बस एक क्लिक में। अब मोबाइल पर फ्री रिंगटोन डाउनलोड करना हुआ आसान।
+              </p>
+              
+            </div>
+            
+            <div class="card shadow-lg border-0">
+              <div class="card-body p-4">
+              {% with messages = get_flashed_messages() %} {% if messages %} {%
+              for message in messages %}
+              <div
+                class="alert alert-info alert-dismissible fade show"
+                role="alert"
+              >
+                <i class="fas fa-info-circle me-2"></i>{{ message }}
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="alert"
+                ></button>
+              </div>
+              {% endfor %} {% endif %} {% endwith %}
+
+              <!-- Modern Direct Menu -->
+              <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                  <div class="menu-card h-100" onclick="showSection('mp3-pane')" data-section="mp3-pane">
+                    <div class="menu-icon">
+                      <i class="fas fa-music"></i>
+                    </div>
+                    <h5 class="menu-title" data-translate="menu_mp3_converter">MP3 Converter</h5>
+                    <p class="menu-description" data-translate="menu_mp3_description">Convert YouTube videos to MP3 audio files instantly</p>
+                    <div class="menu-arrow">
+                      <i class="fas fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="menu-card h-100" onclick="showSection('ringtone-youtube-pane')" data-section="ringtone-youtube-pane">
+                    <div class="menu-icon">
+                      <i class="fab fa-youtube"></i>
+                    </div>
+                    <h5 class="menu-title" data-translate="menu_ringtone_youtube">Ringtone from YouTube</h5>
+                    <p class="menu-description" data-translate="menu_ringtone_youtube_description">Create custom ringtones from YouTube videos</p>
+                    <div class="menu-arrow">
+                      <i class="fas fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="menu-card h-100" onclick="showSection('ringtone-file-pane')" data-section="ringtone-file-pane">
+                    <div class="menu-icon">
+                      <i class="fas fa-file-audio"></i>
+                    </div>
+                    <h5 class="menu-title" data-translate="menu_ringtone_file">Ringtone from File</h5>
+                    <p class="menu-description" data-translate="menu_ringtone_file_description">Create ringtones from your uploaded audio files</p>
+                    <div class="menu-arrow">
+                      <i class="fas fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="myTabContent">
+                <!-- MP3 Converter Tab -->
+                <div
+                  class="tab-pane"
+                  id="mp3-pane"
+                >
+                  <button type="button" class="back-to-menu" onclick="showMenu()">
+                    <i class="fas fa-arrow-left me-2"></i><span data-translate="btn_back_to_menu">Back to Menu</span>
+                  </button>
+                  <form id="convertForm">
+                    <div class="mb-4">
+                      <label for="youtube_url" class="form-label">
+                        <i class="fab fa-youtube me-2 text-danger"></i><span data-translate="label_youtube_url">YouTube URL</span>
+                      </label>
+                      <input
+                        type="url"
+                        class="form-control"
+                        id="youtube_url"
+                        name="youtube_url"
+                        placeholder="https://www.youtube.com/watch?v=..."
+                        required
+                      />
+                      <div class="form-text">
+                        <i class="fas fa-info-circle me-1"></i>
+                        <span data-translate="help_youtube_url">Paste any YouTube video URL to convert it to MP3 audio</span>
+                        <br />
+                        <small class="text-muted">
+                          <i class="fas fa-exclamation-triangle me-1"></i>
+                          <span data-translate="note_youtube_restriction">Note: Some videos may be restricted by YouTube. If conversion fails, try a different video.</span>
+                        </small>
+                      </div>
+                    </div>
+
+                    <div class="d-grid">
+                      <button
+                        type="submit"
+                        class="btn btn-primary btn-lg"
+                        id="convertBtn"
+                      >
+                        <i class="fas fa-download me-2"></i><span data-translate="btn_convert_to_audio">Convert to Audio</span>
+                      </button>
+                    </div>
+                  </form>
+
+                  <div class="loading" id="loading">
+                    <div class="spinner-border" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p class="mt-3">
+                      Converting video to audio... Please wait.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Ringtone from YouTube Tab -->
+                <div
+                  class="tab-pane"
+                  id="ringtone-youtube-pane"
+                >
+                  <button type="button" class="back-to-menu" onclick="showMenu()">
+                    <i class="fas fa-arrow-left me-2"></i><span data-translate="btn_back_to_menu">Back to Menu</span>
+                  </button>
+                  <h5>
+                    <i class="fab fa-youtube me-2"></i><span data-translate="title_create_ringtone_youtube">Create Ringtone from YouTube Video</span>
+                  </h5>
+
+                  <form id="ringtoneForm">
+                    <div class="mb-4">
+                      <label for="ringtone_youtube_url" class="form-label">
+                        <i class="fab fa-youtube me-2 text-danger"></i><span data-translate="label_youtube_url">YouTube URL</span>
+                      </label>
+                      <input
+                        type="url"
+                        class="form-control"
+                        id="ringtone_youtube_url"
+                        name="youtube_url"
+                        placeholder="https://www.youtube.com/watch?v=..."
+                        required
+                      />
+                      <div class="form-text">
+                        <i class="fas fa-info-circle me-1"></i>
+                        <span data-translate="help_youtube_ringtone">Paste any YouTube video URL to create a custom MP3 ringtone</span>
+                      </div>
+                    </div>
+
+                    <!-- Audio Waveform Visualizer -->
+                    <div class="waveform-container mb-4">
+                      <div
+                        class="waveform-header d-flex justify-content-between align-items-center mb-3"
+                      >
+                        <h6 class="mb-0" data-translate="title_waveform_editor">Audio Waveform Editor</h6>
+                        <div class="waveform-controls">
+                          <button
+                            class="btn btn-sm btn-outline-primary me-2"
+                            id="playPauseBtn"
+                            type="button"
+                          >
+                            <i class="fas fa-play"></i>
+                          </button>
+                          <span class="time-display" id="currentTime"
+                            >0:00</span
+                          >
+                        </div>
+                      </div>
+
+                      <div class="waveform-visualizer" id="waveform">
+                        <canvas
+                          id="waveformCanvas"
+                          width="800"
+                          height="100"
+                        ></canvas>
+                      </div>
+
+                      <!-- Time Selection Sliders -->
+                      <div class="row mt-4">
+                        <div class="col-md-6">
+                          <label class="form-label">Start Time</label>
+                          <div class="time-slider-container">
+                            <input
+                              type="range"
+                              class="form-range"
+                              id="startSlider"
+                              min="0"
+                              max="100"
+                              value="0"
+                            />
+                            <div class="time-display">
+                              <span id="startTimeDisplay">0:00</span>
+                              <input
+                                type="number"
+                                class="form-control form-control-sm d-inline-block ms-2"
+                                id="startTimeInput"
+                                style="width: 60px"
+                                min="0"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label">End Time</label>
+                          <div class="time-slider-container">
+                            <input
+                              type="range"
+                              class="form-range"
+                              id="endSlider"
+                              min="0"
+                              max="100"
+                              value="30"
+                            />
+                            <div class="time-display">
+                              <span id="endTimeDisplay">0:30</span>
+                              <input
+                                type="number"
+                                class="form-control form-control-sm d-inline-block ms-2"
+                                id="endTimeInput"
+                                style="width: 60px"
+                                min="1"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Ringtone Duration Info -->
+                      <div class="alert alert-info mt-3" id="durationInfo">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong
+                          >Ringtone Duration:
+                          <span id="ringtoneDuration">30</span> seconds</strong
+                        >
+                        <br />
+                        <small
+                          >Perfect length for a ringtone (recommended: 10-30
+                          seconds)</small
+                        >
+                      </div>
+
+                      <!-- Quality and Format Controls -->
+                      <div class="row mt-4">
+                        <div class="col-md-6">
+                          <label for="quality" class="form-label">
+                            <i class="fas fa-cog me-2"></i>Quality
+                          </label>
+                          <select class="form-select" id="quality" name="quality">
+                            <option value="high">High Quality (128kbps)</option>
+                            <option value="medium">Medium Quality (96kbps)</option>
+                            <option value="low">Low Quality (64kbps)</option>
+                          </select>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="format" class="form-label">
+                            <i class="fas fa-file-audio me-2"></i>Format
+                          </label>
+                          <select class="form-select" id="format" name="format">
+                            <option value="mp3">MP3 (Universal)</option>
+                            <option value="m4a">M4A (macOS/iOS)</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <!-- Action Buttons -->
+                      <div class="d-flex gap-3 mt-4">
+                        <button
+                          class="btn btn-outline-secondary"
+                          id="previewBtn"
+                          type="button"
+                        >
+                          <i class="fas fa-play me-2"></i><span data-translate="btn_preview_ringtone">Preview Ringtone</span>
+                        </button>
+                        <button class="btn btn-primary" id="createRingtoneBtn" type="button">
+                          <i class="fas fa-download me-2"></i><span data-translate="btn_create_ringtone">Create Ringtone</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Hidden inputs for waveform data -->
+                    <input type="hidden" id="start_time" name="start_time" value="0" />
+                    <input type="hidden" id="duration" name="duration" value="30" />
+
+                  </form>
+
+                  <div
+                    class="loading"
+                    id="ringtoneLoading"
+                    style="display: none"
+                  >
+                    <div class="spinner-border" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p class="mt-3">
+                      Creating your custom ringtone... Please wait.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Ringtone from File Tab -->
+                <div
+                  class="tab-pane"
+                  id="ringtone-file-pane"
+                >
+                  <button type="button" class="back-to-menu" onclick="showMenu()">
+                    <i class="fas fa-arrow-left me-2"></i><span data-translate="btn_back_to_menu">Back to Menu</span>
+                  </button>
+                  <h5>
+                    <i class="fas fa-upload me-2"></i><span data-translate="title_create_ringtone_file">Create Ringtone from MP3 File</span>
+                  </h5>
+
+                  <form id="fileRingtoneForm" enctype="multipart/form-data">
+                    <div class="mb-4">
+                      <label for="mp3_file" class="form-label">
+                        <i class="fas fa-file-audio me-2"></i><span data-translate="label_select_mp3_file">Select MP3 File</span>
+                      </label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="mp3_file"
+                        name="mp3_file"
+                        accept=".mp3"
+                        required
+                      />
+                      <div class="form-text">
+                        <i class="fas fa-info-circle me-1"></i>
+                        <span data-translate="help_upload_mp3">Upload your own MP3 file to create a custom ringtone</span>
+                      </div>
+                      <div id="fileUploadStatus" class="mt-2" style="display: none;">
+                        <div class="alert alert-success">
+                          <i class="fas fa-check-circle me-2"></i>
+                          <span id="fileNameDisplay"></span> loaded successfully!
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Audio Waveform Visualizer for File Upload -->
+                    <div class="waveform-container mb-4">
+                      <div
+                        class="waveform-header d-flex justify-content-between align-items-center mb-3"
+                      >
+                        <h6 class="mb-0" data-translate="title_waveform_editor">Audio Waveform Editor</h6>
+                        <div class="waveform-controls">
+                          <button
+                            class="btn btn-sm btn-outline-primary me-2"
+                            id="filePlayPauseBtn"
+                            type="button"
+                          >
+                            <i class="fas fa-play"></i>
+                          </button>
+                          <span class="time-display" id="fileCurrentTime"
+                            >0:00</span
+                          >
+                        </div>
+                      </div>
+
+                      <div class="waveform-visualizer" id="fileWaveform">
+                        <canvas
+                          id="fileWaveformCanvas"
+                          width="800"
+                          height="100"
+                        ></canvas>
+                      </div>
+
+                      <!-- Time Selection Sliders -->
+                      <div class="row mt-4">
+                        <div class="col-md-6">
+                          <label class="form-label">Start Time</label>
+                          <div class="time-slider-container">
+                            <input
+                              type="range"
+                              class="form-range"
+                              id="fileStartSlider"
+                              min="0"
+                              max="100"
+                              value="0"
+                            />
+                            <div class="time-display">
+                              <span id="fileStartTimeDisplay">0:00</span>
+                              <input
+                                type="number"
+                                class="form-control form-control-sm d-inline-block ms-2"
+                                id="fileStartTimeInput"
+                                style="width: 60px"
+                                min="0"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label">End Time</label>
+                          <div class="time-slider-container">
+                            <input
+                              type="range"
+                              class="form-range"
+                              id="fileEndSlider"
+                              min="0"
+                              max="100"
+                              value="30"
+                            />
+                            <div class="time-display">
+                              <span id="fileEndTimeDisplay">0:30</span>
+                              <input
+                                type="number"
+                                class="form-control form-control-sm d-inline-block ms-2"
+                                id="fileEndTimeInput"
+                                style="width: 60px"
+                                min="1"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Ringtone Duration Info -->
+                      <div class="alert alert-info mt-3" id="fileDurationInfo">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong
+                          >Ringtone Duration:
+                          <span id="fileRingtoneDuration">30</span>
+                          seconds</strong
+                        >
+                        <br />
+                        <small
+                          >Perfect length for a ringtone (recommended: 10-30
+                          seconds)</small
+                        >
+                      </div>
+
+                      <!-- Quality and Format Controls -->
+                      <div class="row mt-4">
+                        <div class="col-md-6">
+                          <label for="file_quality" class="form-label">
+                            <i class="fas fa-cog me-2"></i>Quality
+                          </label>
+                          <select class="form-select" id="file_quality" name="quality">
+                            <option value="high">High Quality (128kbps)</option>
+                            <option value="medium">Medium Quality (96kbps)</option>
+                            <option value="low">Low Quality (64kbps)</option>
+                          </select>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="file_format" class="form-label">
+                            <i class="fas fa-file-audio me-2"></i>Format
+                          </label>
+                          <select class="form-select" id="file_format" name="format">
+                            <option value="mp3">MP3 (Universal)</option>
+                            <option value="m4a">M4A (macOS/iOS)</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <!-- Action Buttons -->
+                      <div class="d-flex gap-3 mt-4">
+                        <button
+                          class="btn btn-outline-secondary"
+                          id="filePreviewBtn"
+                          type="button"
+                        >
+                          <i class="fas fa-play me-2"></i><span data-translate="btn_preview_ringtone">Preview Ringtone</span>
+                        </button>
+                        <button
+                          class="btn btn-primary"
+                          id="createFileRingtoneBtn"
+                          type="button"
+                        >
+                          <i class="fas fa-download me-2"></i><span data-translate="btn_create_ringtone">Create Ringtone</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Hidden inputs for waveform data -->
+                    <input type="hidden" id="file_start_time" name="start_time" value="0" />
+                    <input type="hidden" id="file_duration" name="duration" value="30" />
+                  </form>
+
+                  <div
+                    class="loading"
+                    id="fileRingtoneLoading"
+                    style="display: none"
+                  >
+                    <div class="spinner-border" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p class="mt-3">Processing your MP3 file... Please wait.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4" style="background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 25%, #45b7d1 50%, #96ceb4 75%, #feca57 100%); color: white;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5><i class="fas fa-music me-2"></i><span data-translate="site_name">RingtoneWala.com</span></h5>
+            <p class="mb-0" data-translate="footer_description">Your complete audio toolkit for converting and editing.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="mb-0">&copy; 2024 <span data-translate="site_name">RingtoneWala.com</span>. <span data-translate="footer_rights">All rights reserved.</span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document
+        .getElementById("convertForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const youtubeUrl = document.getElementById("youtube_url").value;
+          const convertBtn = document.getElementById("convertBtn");
+          const loading = document.getElementById("loading");
+
+          if (!youtubeUrl) {
+            showAlert("Please enter a YouTube URL", "danger");
+            return;
+          }
+
+          // Show loading state
+          convertBtn.style.display = "none";
+          loading.style.display = "block";
+
+          // Create form data for POST request
+          const formData = new FormData();
+          formData.append("youtube_url", youtubeUrl);
+
+          // Make AJAX request to download the file
+          fetch("/convert", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => {
+              if (response.ok) {
+                return response.blob();
+              } else {
+                return response.json().then((err) => Promise.reject(err));
+              }
+            })
+            .then((blob) => {
+              // Create download link and trigger download
+              const url = window.URL.createObjectURL(blob);
+              const a = document.createElement("a");
+              a.style.display = "none";
+              a.href = url;
+              a.download = "converted_audio.mp3";
+              document.body.appendChild(a);
+              a.click();
+              window.URL.revokeObjectURL(url);
+              document.body.removeChild(a);
+
+              // Hide loading and show success
+              loading.style.display = "none";
+              convertBtn.style.display = "block";
+              showAlert(
+                "Audio conversion completed! File downloaded to your Downloads folder.",
+                "success"
+              );
+            })
+            .catch((error) => {
+              loading.style.display = "none";
+              convertBtn.style.display = "block";
+
+              if (error.error) {
+                showAlert(error.error, "danger");
+              } else {
+                showAlert(
+                  "An error occurred while converting the video. Please try again.",
+                  "danger"
+                );
+              }
+              console.error("Error:", error);
+            });
+        });
+
+      // Ringtone Maker Form Handler - REMOVED to prevent double submission
+      // document
+      //   .getElementById("ringtoneForm")
+      //   .addEventListener("submit", function (e) {
+      //   e.preventDefault();
+
+      //   const youtubeUrl = document.getElementById(
+      //     "ringtone_youtube_url"
+      //   ).value;
+      //   const startTime = document.getElementById("start_time").value;
+      //   const duration = document.getElementById("duration").value;
+      //   const quality = document.getElementById("quality").value;
+      //   const format = document.getElementById("format").value;
+      //   const createBtn = document.getElementById("createRingtoneBtn");
+      //   const loading = document.getElementById("ringtoneLoading");
+
+      //   if (!youtubeUrl) {
+      //     showAlert("Please enter a YouTube URL", "danger");
+      //     return;
+      //   }
+
+      //   // Show loading state
+      //   createBtn.style.display = "none";
+      //   loading.style.display = "block";
+
+      //   // Make AJAX request to create ringtone
+      //   fetch("/create_ringtone", {
+      //     method: "POST",
+      //     headers: {
+      //       "Content-Type": "application/json",
+      //     },
+      //     body: JSON.stringify({
+      //       youtube_url: youtubeUrl,
+      //       start_time: startTime,
+      //       duration: duration,
+      //       quality: quality,
+      //       format: format,
+      //     }),
+      //   })
+      //     .then((response) => {
+      //       if (response.ok) {
+      //         return response.blob();
+      //       } else {
+      //         return response.json().then((err) => Promise.reject(err));
+      //       }
+      //     })
+      //     .then((blob) => {
+      //       // Create download link and trigger download
+      //       const url = window.URL.createObjectURL(blob);
+      //       const a = document.createElement("a");
+      //       a.style.display = "none";
+      //       a.href = url;
+      //       a.download = "custom_ringtone.mp3";
+      //       document.body.appendChild(a);
+      //       a.click();
+      //       window.URL.revokeObjectURL(url);
+      //       document.body.removeChild(a);
+
+      //       // Hide loading and show success
+      //       loading.style.display = "none";
+      //       createBtn.style.display = "block";
+      //       showAlert(
+      //         "MP3 ringtone created successfully! File downloaded to your Downloads folder.",
+      //         "success"
+      //       );
+      //     })
+      //     .catch((error) => {
+      //       loading.style.display = "none";
+      //       createBtn.style.display = "block";
+
+      //       if (error.error) {
+      //         showAlert(error.error, "danger");
+      //       } else {
+      //         showAlert(
+      //           "An error occurred while creating the ringtone. Please try again.",
+      //           "danger"
+      //         );
+      //       }
+      //       console.error("Error:", error);
+      //     });
+      // });
+
+      // File Upload Ringtone Form Handler - REMOVED to prevent double submission
+      // document
+      //   .getElementById("fileRingtoneForm")
+      //   .addEventListener("submit", function (e) {
+      //   e.preventDefault();
+
+      //   const fileInput = document.getElementById("mp3_file");
+      //   const startTime = document.getElementById("file_start_time").value;
+      //   const duration = document.getElementById("file_duration").value;
+      //   const quality = document.getElementById("file_quality").value;
+      //   const format = document.getElementById("file_format").value;
+      //   const createBtn = document.getElementById("createFileRingtoneBtn");
+      //   const loading = document.getElementById("fileRingtoneLoading");
+
+      //   if (!fileInput.files[0]) {
+      //     showAlert("Please select an MP3 file", "danger");
+      //     return;
+      //   }
+
+      //   // Validate file type
+      //   const file = fileInput.files[0];
+      //   if (!file.name.toLowerCase().endsWith(".mp3")) {
+      //     showAlert("Please select an MP3 file only", "danger");
+      //     return;
+      //   }
+
+      //   // Show loading state
+      //   createBtn.style.display = "none";
+      //   loading.style.display = "block";
+
+      //   // Create form data
+      //   const formData = new FormData();
+      //   formData.append("mp3_file", file);
+      //   formData.append("start_time", startTime);
+      //   formData.append("duration", duration);
+      //   formData.append("quality", quality);
+      //   formData.append("format", format);
+
+      //   // Make AJAX request to create ringtone from file
+      //   fetch("/create_ringtone_from_file", {
+      //     method: "POST",
+      //     body: formData,
+      //   })
+      //     .then((response) => {
+      //       if (response.ok) {
+      //         return response.blob();
+      //       } else {
+      //         return response.json().then((err) => Promise.reject(err));
+      //       }
+      //     })
+      //     .then((blob) => {
+      //       // Create download link and trigger download
+      //       const url = window.URL.createObjectURL(blob);
+      //       const a = document.createElement("a");
+      //       a.style.display = "none";
+      //       a.href = url;
+      //       a.download = "custom_ringtone.mp3";
+      //       document.body.appendChild(a);
+      //       a.click();
+      //       window.URL.revokeObjectURL(url);
+      //       document.body.removeChild(a);
+
+      //       // Hide loading and show success
+      //       loading.style.display = "none";
+      //       createBtn.style.display = "block";
+      //       showAlert(
+      //         "Ringtone created successfully from your MP3 file! File downloaded to your Downloads folder.",
+      //         "success"
+      //       );
+      //     })
+      //     .catch((error) => {
+      //       loading.style.display = "none";
+      //       createBtn.style.display = "block";
+
+      //       if (error.error) {
+      //         showAlert(error.error, "danger");
+      //       } else {
+      //         showAlert(
+      //           "An error occurred while processing your file. Please try again.",
+      //           "danger"
+      //         );
+      //       }
+      //       console.error("Error:", error);
+      //     });
+      // });
+
+      // Waveform Visualizer
+      class WaveformVisualizer {
+        constructor(type = "youtube") {
+          this.type = type;
+          this.prefix = type === "file" ? "file" : "";
+
+          // Handle element IDs based on type
+          if (type === "file") {
+            this.canvas = document.getElementById("fileWaveformCanvas");
+            this.startSlider = document.getElementById("fileStartSlider");
+            this.endSlider = document.getElementById("fileEndSlider");
+            this.startTimeDisplay = document.getElementById("fileStartTimeDisplay");
+            this.endTimeDisplay = document.getElementById("fileEndTimeDisplay");
+            this.startTimeInput = document.getElementById("fileStartTimeInput");
+            this.endTimeInput = document.getElementById("fileEndTimeInput");
+            this.ringtoneDuration = document.getElementById("fileRingtoneDuration");
+            this.playPauseBtn = document.getElementById("filePlayPauseBtn");
+            this.currentTime = document.getElementById("fileCurrentTime");
+          } else {
+            this.canvas = document.getElementById("waveformCanvas");
+            this.startSlider = document.getElementById("startSlider");
+            this.endSlider = document.getElementById("endSlider");
+            this.startTimeDisplay = document.getElementById("startTimeDisplay");
+            this.endTimeDisplay = document.getElementById("endTimeDisplay");
+            this.startTimeInput = document.getElementById("startTimeInput");
+            this.endTimeInput = document.getElementById("endTimeInput");
+            this.ringtoneDuration = document.getElementById("ringtoneDuration");
+            this.playPauseBtn = document.getElementById("playPauseBtn");
+            this.currentTime = document.getElementById("currentTime");
+          }
+
+          if (!this.canvas) {
+            console.error(`Canvas element not found for type: ${type}`);
+            return;
+          }
+          this.ctx = this.canvas.getContext("2d");
+          
+          // Debug logging
+          console.log(`WaveformVisualizer initialized for type: ${type}`);
+          console.log(`Canvas found:`, !!this.canvas);
+          console.log(`Start slider found:`, !!this.startSlider);
+          console.log(`End slider found:`, !!this.endSlider);
+          
+          this.isPlaying = false;
+          this.audioData = null;
+          this.maxDuration = 300; // 5 minutes max
+
+          this.initWaveform();
+          this.setupEventListeners();
+        }
+
+        initWaveform() {
+          if (this.type === "file") {
+            // For file uploads, wait for file to be uploaded
+            this.setupFileUploadListener();
+            this.generateSampleWaveform();
+          } else {
+            // For YouTube, generate sample waveform
+            this.generateSampleWaveform();
+          }
+          
+          // Ensure canvas has proper dimensions
+          this.resizeCanvas();
+          this.drawWaveform();
+          this.updateDuration();
+        }
+
+        resizeCanvas() {
+          const container = this.canvas.parentElement;
+          if (container) {
+            const containerWidth = container.clientWidth;
+            this.canvas.width = Math.max(800, containerWidth);
+            this.canvas.height = 100;
+            console.log(`Canvas resized to: ${this.canvas.width}x${this.canvas.height}`);
+          }
+        }
+
+        setupFileUploadListener() {
+          const fileInput = document.getElementById("mp3_file");
+          if (fileInput) {
+            fileInput.addEventListener("change", (e) => {
+              const file = e.target.files[0];
+              if (file && file.type === "audio/mpeg") {
+                this.loadAudioFile(file);
+              }
+            });
+          }
+        }
+
+        loadAudioFile(file) {
+          const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+          const fileReader = new FileReader();
+          
+          // Show loading state
+          const uploadStatus = document.getElementById("fileUploadStatus");
+          const fileNameDisplay = document.getElementById("fileNameDisplay");
+          if (uploadStatus && fileNameDisplay) {
+            fileNameDisplay.textContent = file.name;
+            uploadStatus.style.display = "block";
+            uploadStatus.innerHTML = `
+              <div class="alert alert-info">
+                <i class="fas fa-spinner fa-spin me-2"></i>
+                Loading ${file.name}...
+              </div>
+            `;
+          }
+          
+          fileReader.onload = (e) => {
+            const arrayBuffer = e.target.result;
+            audioContext.decodeAudioData(arrayBuffer)
+              .then((audioBuffer) => {
+                this.processAudioBuffer(audioBuffer);
+                this.drawWaveform();
+                this.updateDuration();
+                
+                // Show success state
+                if (uploadStatus && fileNameDisplay) {
+                  uploadStatus.innerHTML = `
+                    <div class="alert alert-success">
+                      <i class="fas fa-check-circle me-2"></i>
+                      ${file.name} loaded successfully! Duration: ${Math.floor(audioBuffer.duration)}s
+                    </div>
+                  `;
+                }
+              })
+              .catch((error) => {
+                console.error("Error decoding audio:", error);
+                showAlert("Error loading audio file. Please try a different MP3 file.", "danger");
+                
+                // Show error state
+                if (uploadStatus) {
+                  uploadStatus.innerHTML = `
+                    <div class="alert alert-danger">
+                      <i class="fas fa-exclamation-triangle me-2"></i>
+                      Error loading ${file.name}. Please try a different MP3 file.
+                    </div>
+                  `;
+                }
+              });
+          };
+          
+          fileReader.readAsArrayBuffer(file);
+        }
+
+        processAudioBuffer(audioBuffer) {
+          const channelData = audioBuffer.getChannelData(0); // Get left channel
+          const samplesPerPixel = Math.floor(channelData.length / this.canvas.width);
+          this.audioData = [];
+          
+          for (let i = 0; i < this.canvas.width; i++) {
+            let sum = 0;
+            for (let j = 0; j < samplesPerPixel; j++) {
+              const index = i * samplesPerPixel + j;
+              if (index < channelData.length) {
+                sum += Math.abs(channelData[index]);
+              }
+            }
+            const average = sum / samplesPerPixel;
+            const amplitude = average * this.canvas.height;
+            this.audioData.push(amplitude);
+          }
+          
+          // Update max duration based on actual audio length
+          this.maxDuration = Math.floor(audioBuffer.duration);
+          this.startSlider.max = this.maxDuration;
+          this.endSlider.max = this.maxDuration;
+          
+          // Reset sliders to reasonable defaults
+          this.startSlider.value = 0;
+          this.endSlider.value = Math.min(30, this.maxDuration);
+          this.updateTimeDisplays();
+        }
+
+        generateSampleWaveform() {
+          const width = this.canvas.width;
+          const height = this.canvas.height;
+          const barCount = 200;
+          this.audioData = [];
+
+          console.log(`Generating sample waveform: ${width}x${height}, ${barCount} bars`);
+
+          for (let i = 0; i < barCount; i++) {
+            // Create more varied and visible waveform
+            const baseAmplitude = Math.random() * (height * 0.6) + (height * 0.1);
+            const variation = Math.sin(i * 0.1) * (height * 0.2);
+            const amplitude = Math.max(5, baseAmplitude + variation);
+            this.audioData.push(amplitude);
+          }
+          
+          console.log("Sample waveform data generated:", this.audioData.length, "bars");
+        }
+
+        drawWaveform() {
+          const ctx = this.ctx;
+          const width = this.canvas.width;
+          const height = this.canvas.height;
+
+          console.log(`Drawing waveform: ${width}x${height}, audioData length: ${this.audioData ? this.audioData.length : 'null'}`);
+
+          // Clear the canvas
+          ctx.clearRect(0, 0, width, height);
+
+          if (!this.audioData || this.audioData.length === 0) {
+            console.log("No audio data to draw");
+            // Draw a placeholder message
+            ctx.fillStyle = "#667eea";
+            ctx.font = "14px Arial";
+            ctx.textAlign = "center";
+            ctx.fillText("Upload an MP3 file to see waveform", width / 2, height / 2);
+            return;
+          }
+
+          const barWidth = width / this.audioData.length;
+          const centerY = height / 2;
+
+          console.log(`Bar width: ${barWidth}, Center Y: ${centerY}`);
+
+          // Draw waveform bars
+          this.audioData.forEach((amplitude, index) => {
+            const x = index * barWidth;
+            const barHeight = Math.max(2, amplitude); // Ensure minimum height
+
+            // Create gradient for each bar
+            const gradient = ctx.createLinearGradient(x, 0, x + barWidth, 0);
+            gradient.addColorStop(0, "#667eea");
+            gradient.addColorStop(0.5, "#764ba2");
+            gradient.addColorStop(1, "#38ef7d");
+
+            ctx.fillStyle = gradient;
+            ctx.fillRect(x, centerY - barHeight / 2, Math.max(1, barWidth - 1), barHeight);
+          });
+
+          // Draw selection overlay
+          this.drawSelectionOverlay();
+          
+          console.log("Waveform drawing completed");
+        }
+
+        drawSelectionOverlay() {
+          const ctx = this.ctx;
+          const width = this.canvas.width;
+          const height = this.canvas.height;
+
+          const startPercent = this.startSlider.value / this.startSlider.max;
+          const endPercent = this.endSlider.value / this.endSlider.max;
+
+          const startX = startPercent * width;
+          const endX = endPercent * width;
+
+          // Draw selection rectangle
+          ctx.fillStyle = "rgba(102, 126, 234, 0.2)";
+          ctx.fillRect(startX, 0, endX - startX, height);
+
+          // Draw selection borders
+          ctx.strokeStyle = "#667eea";
+          ctx.lineWidth = 2;
+          ctx.beginPath();
+          ctx.moveTo(startX, 0);
+          ctx.lineTo(startX, height);
+          ctx.moveTo(endX, 0);
+          ctx.lineTo(endX, height);
+          ctx.stroke();
+        }
+
+        setupEventListeners() {
+          // Slider events
+          this.startSlider.addEventListener("input", () => {
+            // Ensure start time is not greater than end time
+            if (parseInt(this.startSlider.value) >= parseInt(this.endSlider.value)) {
+              this.startSlider.value = Math.max(0, parseInt(this.endSlider.value) - 1);
+            }
+            this.updateTimeDisplays();
+            this.drawWaveform();
+          });
+
+          this.endSlider.addEventListener("input", () => {
+            // Ensure end time is not less than start time
+            if (parseInt(this.endSlider.value) <= parseInt(this.startSlider.value)) {
+              this.endSlider.value = Math.min(this.maxDuration, parseInt(this.startSlider.value) + 1);
+            }
+            this.updateTimeDisplays();
+            this.drawWaveform();
+          });
+
+          // Input field events
+          this.startTimeInput.addEventListener("input", () => {
+            const value = parseInt(this.startTimeInput.value) || 0;
+            const maxValue = parseInt(this.endTimeInput.value) - 1;
+            const clampedValue = Math.max(0, Math.min(maxValue, value));
+            this.startTimeInput.value = clampedValue;
+            this.startSlider.value = clampedValue;
+            this.updateTimeDisplays();
+            this.drawWaveform();
+          });
+
+          this.endTimeInput.addEventListener("input", () => {
+            const value = parseInt(this.endTimeInput.value) || 30;
+            const minValue = parseInt(this.startTimeInput.value) + 1;
+            const clampedValue = Math.max(minValue, Math.min(this.maxDuration, value));
+            this.endTimeInput.value = clampedValue;
+            this.endSlider.value = clampedValue;
+            this.updateTimeDisplays();
+            this.drawWaveform();
+          });
+
+          // Play/Pause button
+          this.playPauseBtn.addEventListener("click", () => {
+            this.togglePlayback();
+          });
+
+          // Canvas click to set position
+          this.canvas.addEventListener("click", (e) => {
+            const rect = this.canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const percent = x / this.canvas.width;
+            const time = Math.round(percent * this.maxDuration);
+
+            // Set to nearest slider
+            if (
+              Math.abs(time - this.startSlider.value) <
+              Math.abs(time - this.endSlider.value)
+            ) {
+              this.startSlider.value = time;
+              this.startTimeInput.value = time;
+            } else {
+              this.endSlider.value = time;
+              this.endTimeInput.value = time;
+            }
+
+            this.updateTimeDisplays();
+            this.drawWaveform();
+          });
+
+          // Window resize handler
+          window.addEventListener("resize", () => {
+            this.resizeCanvas();
+            this.drawWaveform();
+          });
+        }
+
+        updateTimeDisplays() {
+          const startTime = parseInt(this.startSlider.value);
+          const endTime = parseInt(this.endSlider.value);
+
+          this.startTimeDisplay.textContent = this.formatTime(startTime);
+          this.endTimeDisplay.textContent = this.formatTime(endTime);
+          this.startTimeInput.value = startTime;
+          this.endTimeInput.value = endTime;
+
+          // Update hidden form inputs
+          const startTimeHidden = document.getElementById(this.type === "file" ? "file_start_time" : "start_time");
+          const durationHidden = document.getElementById(this.type === "file" ? "file_duration" : "duration");
+          if (startTimeHidden) startTimeHidden.value = startTime;
+          if (durationHidden) durationHidden.value = endTime - startTime;
+
+          this.updateDuration();
+        }
+
+        updateDuration() {
+          const duration =
+            parseInt(this.endSlider.value) - parseInt(this.startSlider.value);
+          this.ringtoneDuration.textContent = duration;
+
+          // Update duration info color based on length
+          const durationInfo = document.getElementById(this.type === "file" ? "fileDurationInfo" : "durationInfo");
+          if (durationInfo) {
+            if (duration < 10 || duration > 30) {
+              durationInfo.className = "alert alert-warning mt-3";
+            } else {
+              durationInfo.className = "alert alert-info mt-3";
+            }
+          }
+        }
+
+        formatTime(seconds) {
+          const mins = Math.floor(seconds / 60);
+          const secs = seconds % 60;
+          return `${mins}:${secs.toString().padStart(2, "0")}`;
+        }
+
+        togglePlayback() {
+          this.isPlaying = !this.isPlaying;
+          const icon = this.playPauseBtn.querySelector("i");
+
+          if (this.isPlaying) {
+            icon.className = "fas fa-pause";
+            if (this.type === "file") {
+              this.playAudioPreview();
+            } else {
+              this.simulatePlayback();
+            }
+          } else {
+            icon.className = "fas fa-play";
+            if (this.audioElement) {
+              this.audioElement.pause();
+            }
+            // Reset current time display
+            if (this.currentTime) {
+              this.currentTime.textContent = this.formatTime(parseInt(this.startSlider.value));
+            }
+          }
+        }
+
+        playAudioPreview() {
+          if (!this.isPlaying) return;
+
+          // For file type, check if file is uploaded
+          if (this.type === "file") {
+            const fileInput = document.getElementById("mp3_file");
+            if (!fileInput.files[0]) {
+              this.isPlaying = false;
+              this.playPauseBtn.querySelector("i").className = "fas fa-play";
+              showAlert("Please upload an MP3 file first", "warning");
+              return;
+            }
+          }
+
+          // For YouTube type, check if audio element has source
+          if (this.type === "youtube") {
+            if (!this.audioElement || !this.audioElement.src) {
+              this.isPlaying = false;
+              this.playPauseBtn.querySelector("i").className = "fas fa-play";
+              showAlert("Please generate a preview first", "warning");
+              return;
+            }
+          }
+
+          // Create audio element for preview if not exists
+          if (!this.audioElement) {
+            this.audioElement = new Audio();
+            this.audioElement.addEventListener('ended', () => {
+              this.isPlaying = false;
+              this.playPauseBtn.querySelector("i").className = "fas fa-play";
+            });
+            this.audioElement.addEventListener('timeupdate', () => {
+              if (this.isPlaying) {
+                const currentTime = Math.floor(this.audioElement.currentTime);
+                this.currentTime.textContent = this.formatTime(currentTime);
+                
+                // Stop at end time
+                const endTime = parseInt(this.endSlider.value);
+                if (this.audioElement.currentTime >= endTime) {
+                  this.audioElement.pause();
+                  this.isPlaying = false;
+                  this.playPauseBtn.querySelector("i").className = "fas fa-play";
+                }
+              }
+            });
+            this.audioElement.addEventListener('error', (e) => {
+              console.error("Audio playback error:", e);
+              this.isPlaying = false;
+              this.playPauseBtn.querySelector("i").className = "fas fa-play";
+              showAlert("Error playing audio preview", "danger");
+            });
+          }
+
+          // Set audio source for file type
+          if (this.type === "file") {
+            const fileInput = document.getElementById("mp3_file");
+            const file = fileInput.files[0];
+            this.audioElement.src = URL.createObjectURL(file);
+          }
+          
+          // Set start time and play
+          const startTime = parseInt(this.startSlider.value);
+          this.audioElement.currentTime = startTime;
+          
+          // Play the audio
+          this.audioElement.play().catch(error => {
+            console.error("Play failed:", error);
+            this.isPlaying = false;
+            this.playPauseBtn.querySelector("i").className = "fas fa-play";
+            showAlert("Error starting audio playback", "danger");
+          });
+        }
+
+        simulatePlayback() {
+          if (!this.isPlaying) return;
+
+          // If we have an audio element (from preview), use it
+          if (this.audioElement && this.audioElement.src) {
+            this.playAudioPreview();
+            return;
+          }
+
+          // Otherwise, simulate playback with timer (fallback)
+          const startTime = parseInt(this.startSlider.value);
+          const endTime = parseInt(this.endSlider.value);
+          let currentTime = startTime;
+
+          const interval = setInterval(() => {
+            if (!this.isPlaying || currentTime >= endTime) {
+              this.isPlaying = false;
+              this.playPauseBtn.querySelector("i").className = "fas fa-play";
+              clearInterval(interval);
+              return;
+            }
+
+            this.currentTime.textContent = this.formatTime(currentTime);
+            currentTime++;
+          }, 1000);
+        }
+
+        getStartTime() {
+          return parseInt(this.startSlider.value);
+        }
+
+        getEndTime() {
+          return parseInt(this.endSlider.value);
+        }
+
+        getDuration() {
+          return this.getEndTime() - this.getStartTime();
+        }
+      }
+
+      // Initialize waveform visualizers when sections are shown
+      let youtubeWaveformVisualizer;
+      let fileWaveformVisualizer;
+
+      // Function to check if waveform elements are available
+      function checkWaveformElements(type) {
+        const elements = type === "file" ? [
+          "fileWaveformCanvas", "fileStartSlider", "fileEndSlider"
+        ] : [
+          "waveformCanvas", "startSlider", "endSlider"
+        ];
+        
+        const missing = elements.filter(id => !document.getElementById(id));
+        if (missing.length > 0) {
+          console.log(`Missing elements for ${type}:`, missing);
+          return false;
+        }
+        return true;
+      }
+
+      // Debug function to check all waveform elements
+      function debugWaveformElements() {
+        console.log("=== DEBUGGING WAVEFORM ELEMENTS ===");
+        
+        const youtubeElements = [
+          "waveformCanvas", "startSlider", "endSlider", 
+          "startTimeDisplay", "endTimeDisplay", "startTimeInput", "endTimeInput",
+          "ringtoneDuration", "playPauseBtn", "currentTime"
+        ];
+        
+        const fileElements = [
+          "fileWaveformCanvas", "fileStartSlider", "fileEndSlider",
+          "fileStartTimeDisplay", "fileEndTimeDisplay", "fileStartTimeInput", "fileEndTimeInput", 
+          "fileRingtoneDuration", "filePlayPauseBtn", "fileCurrentTime"
+        ];
+        
+        console.log("YouTube elements:");
+        youtubeElements.forEach(id => {
+          const element = document.getElementById(id);
+          console.log(`  ${id}:`, element ? "FOUND" : "NOT FOUND", element);
+        });
+        
+        console.log("File elements:");
+        fileElements.forEach(id => {
+          const element = document.getElementById(id);
+          console.log(`  ${id}:`, element ? "FOUND" : "NOT FOUND", element);
+        });
+        
+        console.log("=== END DEBUG ===");
+      }
+
+      // Initialize waveform visualizers immediately on page load
+      document.addEventListener('DOMContentLoaded', function() {
+        // Debug elements first
+        debugWaveformElements();
+        
+        // Add a small delay to ensure all elements are rendered
+        setTimeout(() => {
+          console.log("=== INITIALIZING WAVEFORM VISUALIZERS ===");
+          
+          // Check if elements are available before initializing
+          if (checkWaveformElements("youtube")) {
+            try {
+              youtubeWaveformVisualizer = new WaveformVisualizer("youtube");
+              console.log("YouTube waveform visualizer initialized");
+            } catch (error) {
+              console.error("Error initializing YouTube waveform visualizer:", error);
+            }
+          } else {
+            console.log("YouTube waveform elements not ready, will initialize later");
+          }
+          
+          if (checkWaveformElements("file")) {
+            try {
+              fileWaveformVisualizer = new WaveformVisualizer("file");
+              console.log("File waveform visualizer initialized");
+            } catch (error) {
+              console.error("Error initializing file waveform visualizer:", error);
+            }
+          } else {
+            console.log("File waveform elements not ready, will initialize later");
+          }
+        }, 100);
+      });
+
+      // Create ringtone button for YouTube
+      document
+        .getElementById("createRingtoneBtn")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          
+          if (!youtubeWaveformVisualizer) {
+            showAlert("Please enter a YouTube URL first", "warning");
+            return;
+          }
+
+          const youtubeUrl = document.getElementById("ringtone_youtube_url").value;
+          if (!youtubeUrl) {
+            showAlert("Please enter a YouTube URL", "danger");
+            return;
+          }
+
+          const startTime = youtubeWaveformVisualizer.getStartTime();
+          const duration = youtubeWaveformVisualizer.getDuration();
+          const quality = document.getElementById("quality").value;
+          const format = document.getElementById("format").value;
+          const createBtn = document.getElementById("createRingtoneBtn");
+          const loading = document.getElementById("ringtoneLoading");
+
+          // Show loading state
+          createBtn.style.display = "none";
+          loading.style.display = "block";
+
+          // Make AJAX request to create ringtone
+          fetch("/create_ringtone", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              youtube_url: youtubeUrl,
+              start_time: startTime,
+              duration: duration,
+              quality: quality,
+              format: format,
+            }),
+          })
+            .then((response) => {
+              if (response.ok) {
+                return response.blob();
+              } else {
+                return response.json().then((err) => Promise.reject(err));
+              }
+            })
+            .then((blob) => {
+              // Create download link and trigger download
+              const url = window.URL.createObjectURL(blob);
+              const a = document.createElement("a");
+              a.style.display = "none";
+              a.href = url;
+              const extension = format === 'm4a' ? 'm4a' : 'mp3';
+              a.download = `custom_ringtone.${extension}`;
+              document.body.appendChild(a);
+              a.click();
+              window.URL.revokeObjectURL(url);
+              document.body.removeChild(a);
+
+              // Hide loading and show success
+              loading.style.display = "none";
+              createBtn.style.display = "block";
+              showAlert(
+                `Ringtone created successfully! File downloaded to your Downloads folder.`,
+                "success"
+              );
+            })
+            .catch((error) => {
+              loading.style.display = "none";
+              createBtn.style.display = "block";
+
+              if (error.error) {
+                showAlert(error.error, "danger");
+              } else {
+                showAlert(
+                  "An error occurred while creating the ringtone. Please try again.",
+                  "danger"
+                );
+              }
+              console.error("Error:", error);
+            });
+        });
+
+      // Create ringtone button for file upload
+      document
+        .getElementById("createFileRingtoneBtn")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          
+          console.log("Create ringtone button clicked");
+          console.log("fileWaveformVisualizer exists:", !!fileWaveformVisualizer);
+          
+          if (!fileWaveformVisualizer) {
+            showAlert("Please upload an MP3 file first", "warning");
+            return;
+          }
+
+          const fileInput = document.getElementById("mp3_file");
+          console.log("File input:", fileInput);
+          console.log("Files:", fileInput ? fileInput.files : "No file input found");
+          
+          if (!fileInput || !fileInput.files[0]) {
+            showAlert("Please select an MP3 file", "danger");
+            return;
+          }
+
+          const startTime = fileWaveformVisualizer.getStartTime();
+          const duration = fileWaveformVisualizer.getDuration();
+          const quality = document.getElementById("file_quality").value;
+          const format = document.getElementById("file_format").value;
+          const createBtn = document.getElementById("createFileRingtoneBtn");
+          const loading = document.getElementById("fileRingtoneLoading");
+
+          console.log("Start time:", startTime, "Duration:", duration, "Quality:", quality, "Format:", format);
+
+          // Show loading state
+          createBtn.style.display = "none";
+          loading.style.display = "block";
+
+          // Create form data
+          const formData = new FormData();
+          formData.append("mp3_file", fileInput.files[0]);
+          formData.append("start_time", startTime);
+          formData.append("duration", duration);
+          formData.append("quality", quality);
+          formData.append("format", format);
+
+          console.log("Sending request to /create_ringtone_from_file");
+
+          // Create ringtone request
+          fetch("/create_ringtone_from_file", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => {
+              if (response.ok) {
+                return response.blob();
+              } else {
+                return response.json().then((err) => Promise.reject(err));
+              }
+            })
+            .then((blob) => {
+              // Create download link and trigger download
+              const url = window.URL.createObjectURL(blob);
+              const a = document.createElement("a");
+              a.style.display = "none";
+              a.href = url;
+              const extension = format === 'm4a' ? 'm4a' : 'mp3';
+              a.download = `custom_ringtone.${extension}`;
+              document.body.appendChild(a);
+              a.click();
+              window.URL.revokeObjectURL(url);
+              document.body.removeChild(a);
+
+              // Hide loading and show success
+              loading.style.display = "none";
+              createBtn.style.display = "block";
+              showAlert(
+                `Ringtone created successfully! File downloaded to your Downloads folder.`,
+                "success"
+              );
+            })
+            .catch((error) => {
+              loading.style.display = "none";
+              createBtn.style.display = "block";
+
+              if (error.error) {
+                showAlert(error.error, "danger");
+              } else {
+                showAlert(
+                  "An error occurred while creating the ringtone. Please try again.",
+                  "danger"
+                );
+              }
+              console.error("Error:", error);
+            });
+        });
+
+      // Preview functionality for YouTube ringtone
+      document
+        .getElementById("previewBtn")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          if (!youtubeWaveformVisualizer) {
+            showAlert("Please enter a YouTube URL first", "warning");
+            return;
+          }
+
+          const youtubeUrl = document.getElementById("ringtone_youtube_url").value;
+          if (!youtubeUrl) {
+            showAlert("Please enter a YouTube URL", "warning");
+            return;
+          }
+
+          const startTime = youtubeWaveformVisualizer.getStartTime();
+          const duration = youtubeWaveformVisualizer.getDuration();
+          const quality = document.getElementById("quality").value;
+          const format = document.getElementById("format").value;
+
+          // Show loading state
+          const previewBtn = document.getElementById("previewBtn");
+          console.log("YouTube preview button found:", !!previewBtn);
+          if (!previewBtn) {
+            console.error("YouTube preview button not found!");
+            return;
+          }
+          const originalText = previewBtn.innerHTML;
+          console.log("Original button text:", originalText);
+          previewBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Generating Preview...';
+          previewBtn.disabled = true;
+          console.log("Button loading state set");
+
+          // Create preview request
+          fetch("/preview_ringtone", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              youtube_url: youtubeUrl,
+              start_time: startTime,
+              duration: duration,
+              quality: quality,
+              format: format,
+            }),
+          })
+            .then((response) => {
+              if (response.ok) {
+                return response.blob();
+              } else {
+                throw new Error("Preview generation failed");
+              }
+            })
+            .then((blob) => {
+              const url = URL.createObjectURL(blob);
+              
+              // Use the waveform visualizer's audio element for integration with play/pause button
+              if (!youtubeWaveformVisualizer.audioElement) {
+                youtubeWaveformVisualizer.audioElement = new Audio();
+              }
+              
+              youtubeWaveformVisualizer.audioElement.src = url;
+              youtubeWaveformVisualizer.audioElement.currentTime = startTime;
+              
+              // Set up automatic stop at end time
+              const stopTime = startTime + duration;
+              const checkTime = () => {
+                if (youtubeWaveformVisualizer.audioElement.currentTime >= stopTime) {
+                  youtubeWaveformVisualizer.audioElement.pause();
+                  youtubeWaveformVisualizer.audioElement.removeEventListener('timeupdate', checkTime);
+                  youtubeWaveformVisualizer.isPlaying = false;
+                  youtubeWaveformVisualizer.playPauseBtn.querySelector("i").className = "fas fa-play";
+                  URL.revokeObjectURL(url);
+                  console.log("YouTube preview ended");
+                }
+              };
+              
+              youtubeWaveformVisualizer.audioElement.addEventListener('timeupdate', checkTime);
+              youtubeWaveformVisualizer.audioElement.play();
+              
+              // Update play/pause button state
+              youtubeWaveformVisualizer.isPlaying = true;
+              youtubeWaveformVisualizer.playPauseBtn.querySelector("i").className = "fas fa-pause";
+              
+              showAlert(`Playing preview (${startTime}s - ${stopTime}s)...`, "info");
+            })
+            .catch((error) => {
+              console.error("Preview error:", error);
+              showAlert("Failed to generate preview. Please try again.", "danger");
+            })
+            .finally(() => {
+              // Reset button state
+              console.log("Resetting YouTube preview button");
+              previewBtn.innerHTML = originalText;
+              previewBtn.disabled = false;
+              console.log("YouTube preview button reset complete");
+            });
+        });
+
+      // Optimized preview functionality for file uploads
+      function previewFileLocally(file, startTime, duration) {
+        return new Promise((resolve, reject) => {
+          try {
+            const audio = new Audio();
+            const url = URL.createObjectURL(file);
+            audio.src = url;
+            
+            audio.addEventListener('loadedmetadata', () => {
+              const stopTime = startTime + duration;
+              
+              // Create a temporary audio element for preview
+              const previewAudio = audio.cloneNode();
+              previewAudio.currentTime = startTime;
+              
+              // Set up automatic stop
+              const checkTime = () => {
+                if (previewAudio.currentTime >= stopTime) {
+                  previewAudio.pause();
+                  previewAudio.removeEventListener('timeupdate', checkTime);
+                  URL.revokeObjectURL(url);
+                }
+              };
+              
+              previewAudio.addEventListener('timeupdate', checkTime);
+              resolve(previewAudio);
+            });
+            
+            audio.addEventListener('error', () => {
+              URL.revokeObjectURL(url);
+              reject(new Error('Failed to load audio'));
+            });
+            
+          } catch (error) {
+            reject(error);
+          }
+        });
+      }
+
+      // Preview functionality for file ringtone
+      const filePreviewBtn = document.getElementById("filePreviewBtn");
+      console.log("File preview button found:", !!filePreviewBtn);
+      
+      if (filePreviewBtn) {
+        filePreviewBtn.addEventListener("click", function (e) {
+          e.preventDefault();
+          
+          console.log("Preview button clicked");
+          console.log("fileWaveformVisualizer exists:", !!fileWaveformVisualizer);
+          
+          if (!fileWaveformVisualizer) {
+            showAlert("Please upload an MP3 file first", "warning");
+            return;
+          }
+
+          const fileInput = document.getElementById("mp3_file");
+          console.log("File input:", fileInput);
+          console.log("Files:", fileInput ? fileInput.files : "No file input found");
+          
+          if (!fileInput || !fileInput.files[0]) {
+            showAlert("Please select an MP3 file", "warning");
+            return;
+          }
+
+          const startTime = fileWaveformVisualizer.getStartTime();
+          const duration = fileWaveformVisualizer.getDuration();
+          const quality = document.getElementById("file_quality").value;
+          const format = document.getElementById("file_format").value;
+
+          console.log("Preview params:", { startTime, duration, quality, format });
+
+          // Show loading state
+          const filePreviewBtn = document.getElementById("filePreviewBtn");
+          const originalText = filePreviewBtn.innerHTML;
+          filePreviewBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Generating Preview...';
+          filePreviewBtn.disabled = true;
+
+          // Create form data
+          const formData = new FormData();
+          formData.append("mp3_file", fileInput.files[0]);
+          formData.append("start_time", startTime);
+          formData.append("duration", duration);
+          formData.append("quality", quality);
+          formData.append("format", format);
+
+          console.log("Sending preview request to /preview_ringtone_from_file");
+
+          // Create preview request (simplified like YouTube)
+          fetch("/preview_ringtone_from_file", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => {
+              console.log("Preview response status:", response.status);
+              if (response.ok) {
+                return response.blob();
+              } else {
+                return response.json().then((err) => {
+                  console.error("Preview error:", err);
+                  throw new Error(err.error || "Preview generation failed");
+                });
+              }
+            })
+            .then((blob) => {
+              console.log("Preview blob received:", blob.size, "bytes");
+              const url = URL.createObjectURL(blob);
+              
+              // Use the waveform visualizer's audio element for integration with play/pause button
+              if (!fileWaveformVisualizer.audioElement) {
+                fileWaveformVisualizer.audioElement = new Audio();
+              }
+              
+              fileWaveformVisualizer.audioElement.src = url;
+              fileWaveformVisualizer.audioElement.currentTime = startTime;
+              
+              // Set up automatic stop at end time
+              const stopTime = startTime + duration;
+              const checkTime = () => {
+                if (fileWaveformVisualizer.audioElement.currentTime >= stopTime) {
+                  fileWaveformVisualizer.audioElement.pause();
+                  fileWaveformVisualizer.audioElement.removeEventListener('timeupdate', checkTime);
+                  fileWaveformVisualizer.isPlaying = false;
+                  fileWaveformVisualizer.playPauseBtn.querySelector("i").className = "fas fa-play";
+                  URL.revokeObjectURL(url);
+                  console.log("File preview ended");
+                }
+              };
+              
+              fileWaveformVisualizer.audioElement.addEventListener('timeupdate', checkTime);
+              fileWaveformVisualizer.audioElement.play();
+              
+              // Update play/pause button state
+              fileWaveformVisualizer.isPlaying = true;
+              fileWaveformVisualizer.playPauseBtn.querySelector("i").className = "fas fa-pause";
+              
+              showAlert(`Playing preview (${startTime}s - ${stopTime}s)...`, "info");
+            })
+            .catch((error) => {
+              console.error("Preview error:", error);
+              showAlert(`Preview failed: ${error.message}`, "danger");
+            })
+            .finally(() => {
+              // Reset button state
+              filePreviewBtn.innerHTML = originalText;
+              filePreviewBtn.disabled = false;
+            });
+        });
+      } else {
+        console.error("File preview button not found!");
+      }
+
+      function showAlert(message, type) {
+        const alertContainer = document.querySelector(".card-body");
+        const alertDiv = document.createElement("div");
+        alertDiv.className = `alert alert-${type} alert-dismissible fade show`;
+        alertDiv.innerHTML = `
+           <i class="fas fa-${
+             type === "success" ? "check-circle" : "exclamation-triangle"
+           } me-2"></i>${message}
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          `;
+        alertContainer.insertBefore(alertDiv, alertContainer.firstChild);
+
+        // Auto-hide after 5 seconds
+        setTimeout(() => {
+          const bsAlert = new bootstrap.Alert(alertDiv);
+          bsAlert.close();
+        }, 1000);
+      }
+
+      // Auto-hide existing alerts after 5 seconds
+      setTimeout(function () {
+        const alerts = document.querySelectorAll(".alert");
+        alerts.forEach(function (alert) {
+          const bsAlert = new bootstrap.Alert(alert);
+          bsAlert.close();
+        });
+      }, 5000);
+
+      // Modern Menu Navigation Functions
+      function showSection(sectionId) {
+        console.log('Showing section:', sectionId);
+        
+        // Initialize waveform visualizers if needed
+        if (sectionId === 'ringtone-youtube-pane' && !youtubeWaveformVisualizer) {
+          if (checkWaveformElements("youtube")) {
+            try {
+              youtubeWaveformVisualizer = new WaveformVisualizer("youtube");
+              console.log("YouTube waveform visualizer initialized on section show");
+            } catch (error) {
+              console.error("Error initializing YouTube waveform visualizer:", error);
+            }
+          } else {
+            console.log("YouTube waveform elements still not ready");
+          }
+        }
+        
+        if (sectionId === 'ringtone-file-pane' && !fileWaveformVisualizer) {
+          if (checkWaveformElements("file")) {
+            try {
+              fileWaveformVisualizer = new WaveformVisualizer("file");
+              console.log("File waveform visualizer initialized on section show");
+            } catch (error) {
+              console.error("Error initializing file waveform visualizer:", error);
+            }
+          } else {
+            console.log("File waveform elements still not ready");
+          }
+        }
+        
+        // Hide all tab panes
+        const allPanes = document.querySelectorAll('.tab-pane');
+        console.log('Found tab panes:', allPanes.length);
+        allPanes.forEach(pane => {
+          pane.classList.remove('active');
+          pane.style.display = 'none';
+        });
+
+        // Show selected section
+        const targetPane = document.getElementById(sectionId);
+        if (targetPane) {
+          targetPane.classList.add('active');
+          targetPane.style.display = 'block';
+          console.log('Showing pane:', sectionId);
+        } else {
+          console.error('Target pane not found:', sectionId);
+        }
+
+        // Update menu card states
+        const allCards = document.querySelectorAll('.menu-card');
+        allCards.forEach(card => {
+          card.classList.remove('active');
+        });
+
+        const activeCard = document.querySelector(`[data-section="${sectionId}"]`);
+        if (activeCard) {
+          activeCard.classList.add('active');
+        }
+
+        // Scroll to the content
+        setTimeout(() => {
+          const contentElement = document.getElementById(sectionId);
+          if (contentElement) {
+            contentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 50);
+      }
+
+      function showMenu() {
+        console.log('Showing menu');
+        
+        // Hide all tab panes
+        const allPanes = document.querySelectorAll('.tab-pane');
+        allPanes.forEach(pane => {
+          pane.classList.remove('active');
+          pane.style.display = 'none';
+        });
+
+        // Remove active state from all menu cards
+        const allCards = document.querySelectorAll('.menu-card');
+        allCards.forEach(card => {
+          card.classList.remove('active');
+        });
+
+        // Scroll to top
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      // Translation System
+      const translations = {
+        en: {
+          site_name: "RingtoneWala.com",
+          nav_home: "Home",
+          nav_youtube_mp3: "YouTube to MP3",
+          nav_ringtone_maker: "Ringtone Maker",
+          nav_blog: "Blog",
+          hero_title: "Pick Your Favorite Song, Make Your Own Ringtone!",
+          hero_subtitle: "Download audio from YouTube and create your ringtone in just one click.",
+          btn_start_converting: "Start Making Ringtone",
+          btn_learn_more: "Learn More",
+          menu_mp3_converter: "MP3 Converter",
+          menu_mp3_description: "Convert YouTube videos to MP3 audio files instantly",
+          menu_ringtone_youtube: "Ringtone from YouTube",
+          menu_ringtone_youtube_description: "Create custom ringtones from YouTube videos",
+          menu_ringtone_file: "Ringtone from File",
+          menu_ringtone_file_description: "Create ringtones from your uploaded audio files",
+          footer_description: "Your complete audio toolkit for converting and editing.",
+          footer_rights: "All rights reserved.",
+          btn_back_to_menu: "Back to Menu",
+          label_youtube_url: "YouTube URL",
+          help_youtube_url: "Paste any YouTube video URL to convert it to MP3 audio",
+          note_youtube_restriction: "Note: Some videos may be restricted by YouTube. If conversion fails, try a different video.",
+          btn_convert_to_audio: "Convert to Audio",
+          title_create_ringtone_youtube: "Create Ringtone from YouTube Video",
+          help_youtube_ringtone: "Paste any YouTube video URL to create a custom MP3 ringtone",
+          title_waveform_editor: "Audio Waveform Editor",
+          title_create_ringtone_file: "Create Ringtone from MP3 File",
+          label_select_mp3_file: "Select MP3 File",
+          help_upload_mp3: "Upload your own MP3 file to create a custom ringtone",
+          btn_preview_ringtone: "Preview Ringtone",
+          btn_create_ringtone: "Create Ringtone"
+        },
+        hi: {
+          site_name: "रिंगटोनवाला.कॉम",
+          nav_home: "होम",
+          nav_youtube_mp3: "यूट्यूब से MP3",
+          nav_ringtone_maker: "रिंगटोन मेकर",
+          nav_blog: "ब्लॉग",
+          hero_title: "अपना फेवरेट गाना चुनो, बनाओ अपनी रिंगटोन!",
+          hero_subtitle: "YouTube से Audio डाउनलोड करो और सिर्फ एक क्लिक में ringtone बनाओ।",
+          btn_start_converting: "रिंगटोन बनाना शुरू करें",
+          btn_learn_more: "और जानें",
+          menu_mp3_converter: "MP3 कन्वर्टर",
+          menu_mp3_description: "यूट्यूब वीडियो को तुरंत MP3 ऑडियो फाइल में कन्वर्ट करें",
+          menu_ringtone_youtube: "यूट्यूब से रिंगटोन",
+          menu_ringtone_youtube_description: "यूट्यूब वीडियो से कस्टम रिंगटोन बनाएं",
+          menu_ringtone_file: "फाइल से रिंगटोन",
+          menu_ringtone_file_description: "अपनी अपलोड की गई ऑडियो फाइलों से रिंगटोन बनाएं",
+          footer_description: "कन्वर्टिंग और एडिटिंग के लिए आपका पूर्ण ऑडियो टूलकिट।",
+          footer_rights: "सभी अधिकार सुरक्षित।",
+          btn_back_to_menu: "मेनू पर वापस जाएं",
+          label_youtube_url: "यूट्यूब URL",
+          help_youtube_url: "MP3 ऑडियो में कन्वर्ट करने के लिए कोई भी यूट्यूब वीडियो URL पेस्ट करें",
+          note_youtube_restriction: "नोट: कुछ वीडियो यूट्यूब द्वारा प्रतिबंधित हो सकते हैं। यदि कन्वर्जन विफल हो जाए, तो कोई अन्य वीडियो आज़माएं।",
+          btn_convert_to_audio: "ऑडियो में कन्वर्ट करें",
+          title_create_ringtone_youtube: "यूट्यूब वीडियो से रिंगटोन बनाएं",
+          help_youtube_ringtone: "कस्टम MP3 रिंगटोन बनाने के लिए कोई भी यूट्यूब वीडियो URL पेस्ट करें",
+          title_waveform_editor: "ऑडियो वेवफॉर्म एडिटर",
+          title_create_ringtone_file: "MP3 फाइल से रिंगटोन बनाएं",
+          label_select_mp3_file: "MP3 फाइल चुनें",
+          help_upload_mp3: "कस्टम रिंगटोन बनाने के लिए अपनी खुद की MP3 फाइल अपलोड करें",
+          btn_preview_ringtone: "रिंगटोन Try करें",
+          btn_create_ringtone: "रिंगटोन बनाएं"
+        }
+      };
+
+      function changeLanguage(language) {
+        console.log('Changing language to:', language);
+        
+        // Save language preference
+        localStorage.setItem('selectedLanguage', language);
+        
+        // Update document language (keep LTR for both languages)
+        document.documentElement.lang = language;
+        document.body.style.direction = 'ltr'; // Always keep left-to-right
+        
+        // Update current language display
+        const currentLangElement = document.getElementById('currentLanguage');
+        if (currentLangElement) {
+          currentLangElement.textContent = language === 'hi' ? 'हिन्दी' : 'English';
+        }
+        
+        // Translate all elements with data-translate attribute
+        const elements = document.querySelectorAll('[data-translate]');
+        console.log('Found', elements.length, 'elements to translate');
+        elements.forEach(element => {
+          const key = element.getAttribute('data-translate');
+          if (translations[language] && translations[language][key]) {
+            element.textContent = translations[language][key];
+          }
+        });
+        
+        console.log('Language changed successfully to:', language);
+      }
+
+      // Load saved language preference on page load
+      document.addEventListener('DOMContentLoaded', function() {
+        const savedLanguage = localStorage.getItem('selectedLanguage') || 'hi'; // Default to Hindi
+        changeLanguage(savedLanguage);
+        
+        // Add event listeners for language dropdown
+        document.querySelectorAll('[data-lang]').forEach(item => {
+          item.addEventListener('click', function(e) {
+            e.preventDefault();
+            const lang = this.getAttribute('data-lang');
+            console.log('Language dropdown clicked:', lang);
+            changeLanguage(lang);
+            
+            // Close dropdown manually if Bootstrap doesn't handle it
+            const dropdown = document.querySelector('#languageDropdown');
+            if (dropdown) {
+              dropdown.classList.remove('show');
+              const dropdownMenu = dropdown.nextElementSibling;
+              if (dropdownMenu) {
+                dropdownMenu.classList.remove('show');
+              }
+            }
+          });
+        });
+        
+        // Fallback: Add onclick handlers as well
+        document.querySelectorAll('[data-lang="en"]').forEach(item => {
+          item.onclick = function(e) {
+            e.preventDefault();
+            changeLanguage('en');
+          };
+        });
+        
+        document.querySelectorAll('[data-lang="hi"]').forEach(item => {
+          item.onclick = function(e) {
+            e.preventDefault();
+            changeLanguage('hi');
+          };
+        });
+        
+        // Debug: Test language change
+        console.log('Language toggle initialized. Available languages:', Object.keys(translations));
+        console.log('Current language elements found:', document.querySelectorAll('[data-translate]').length);
+      });
+
+      // Initialize the page - show menu by default
+      document.addEventListener('DOMContentLoaded', function() {
+        showMenu();
+      });
+      
+      // Start Making Ringtone function
+      function startMakingRingtone(event) {
+        event.preventDefault();
+        
+        // Show success message
+        showAlert("🎵 Welcome to Ringtone Maker! Choose your preferred method below.", "success");
+        
+        // Navigate to ringtone section and show menu
+        setTimeout(() => {
+          showMenu();
+          
+          // Scroll to the ringtone section
+          const ringtoneSection = document.querySelector('#converter');
+          if (ringtoneSection) {
+            ringtoneSection.scrollIntoView({ 
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        }, 500);
+      }
+    </script>
+  </body>
+</html>

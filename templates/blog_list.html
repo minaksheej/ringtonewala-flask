@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <title>RingtoneWala.com Blog - Tips, Guides & Tutorials</title>
+    <meta
+      name="description"
+      content="Learn how to convert YouTube videos to MP3, create custom ringtones, and get the best audio quality. Expert tips and tutorials for audio conversion."
+    />
+    <meta
+      name="keywords"
+      content="youtube to mp3 tutorial, ringtone making guide, audio conversion tips, mp3 converter help"
+    />
+    <meta name="author" content="RingtoneWala.com" />
+    <meta name="robots" content="index, follow" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .blog-card {
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        transition: transform 0.3s ease;
+      }
+
+      .blog-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .blog-card-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 20px;
+        border-radius: 20px 20px 0 0;
+      }
+
+      .blog-card-body {
+        padding: 25px;
+      }
+
+      .blog-meta {
+        color: #6c757d;
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+      }
+
+      .read-more-btn {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border: none;
+        border-radius: 15px;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+      }
+
+      .read-more-btn:hover {
+        color: white;
+        transform: translateY(-2px);
+      }
+
+      .back-btn {
+        background: white;
+        border: none;
+        border-radius: 15px;
+        color: #667eea;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+      }
+
+      .back-btn:hover {
+        color: #667eea;
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container py-5">
+      <a href="/" class="back-btn">
+        <i class="fas fa-arrow-left me-2"></i>Back to Converter
+      </a>
+
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-white text-center mb-5">
+            <i class="fas fa-blog me-3"></i>RingtoneWala.com Blog
+          </h1>
+          <p class="text-white text-center mb-5">
+            Expert tips, guides, and tutorials for audio conversion and ringtone
+            creation
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        {% for blog in blogs %}
+        <div class="col-md-6 col-lg-4">
+          <div class="blog-card">
+            <div class="blog-card-header">
+              <h5 class="mb-0">{{ blog.title }}</h5>
+            </div>
+            <div class="blog-card-body">
+              <p class="blog-meta">
+                <i class="fas fa-calendar me-2"></i>{{ blog.date }}
+                <span class="ms-3">
+                  <i class="fas fa-clock me-2"></i>{{ blog.read_time }} min read
+                </span>
+              </p>
+              <p>{{ blog.excerpt }}</p>
+              <a href="/blog/{{ blog.slug }}" class="read-more-btn">
+                <i class="fas fa-arrow-right me-2"></i>Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
