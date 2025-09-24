@@ -101,5 +101,6 @@ instance/
 # Docker
 .dockerignore
 
-# Scripts (keep start.sh in git, but ignore other scripts)
+# Scripts (keep deployment scripts in git)
 # start.sh
+# run_app.py

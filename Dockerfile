@@ -23,15 +23,16 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code
 COPY . .
 
-# Make startup script executable
-RUN chmod +x start.sh
-
 # Create a non-root user
 RUN useradd --create-home --shell /bin/bash app && chown -R app:app /app
+
+# Make startup script executable and ensure proper ownership
+RUN chmod +x start.sh && chown app:app start.sh
+RUN chmod +x run_app.py && chown app:app run_app.py
 USER app
 
 # Expose port (Railway typically uses 8000, but we'll use the env var in CMD)
 EXPOSE 8000
 
-# Run the application using the startup script
-CMD ["./start.sh"]
+# Run the application using Python script that handles PORT properly
+CMD ["python", "run_app.py"]
