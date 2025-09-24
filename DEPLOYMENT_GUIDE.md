@@ -52,6 +52,14 @@ If you see "ffprobe and ffmpeg not found":
 2. **Check logs**: Look for FFmpeg installation messages in Railway logs
 3. **Verify environment**: The app checks for FFmpeg on startup
 
+### PORT Error
+
+If you see "Error: '$PORT' is not a valid port number":
+
+1. **Check Railway environment**: Railway automatically sets the PORT variable
+2. **Check startup script**: The app uses `start.sh` to handle PORT dynamically
+3. **Verify Dockerfile**: Uses proper shell form to expand environment variables
+
 ### Build Failures
 
 1. **Check Dockerfile**: Ensure it includes FFmpeg installation

@@ -100,4 +100,6 @@ instance/
 
 # Docker
 .dockerignore
-venv/
+
+# Scripts (keep start.sh in git, but ignore other scripts)
+# start.sh
