@@ -10,7 +10,17 @@ def main():
     # Get PORT from environment, default to 8000
     port = os.environ.get('PORT', '8000')
     
+    # Validate port number
+    try:
+        port_int = int(port)
+        if port_int < 1 or port_int > 65535:
+            raise ValueError("Port out of range")
+    except (ValueError, TypeError):
+        print(f"Invalid PORT value: '{port}', using default 8000")
+        port = '8000'
+    
     print(f"Starting Flask app on port {port}")
+    print(f"Environment variables: PORT={os.environ.get('PORT', 'NOT_SET')}")
     
     # Build gunicorn command
     cmd = [
