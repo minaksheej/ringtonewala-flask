@@ -1,1 +1,1 @@
-web: python debug_port.py
+web: python run_app.py
